@@ -7,7 +7,6 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 add_hook("ClientAreaFooterOutput", 1, function($vars) {
 
-
     $appId = '';
 
     $data = Capsule::table('tbladdonmodules')
@@ -27,7 +26,7 @@ add_hook("ClientAreaFooterOutput", 1, function($vars) {
         // Base set of user data information we would like to collect: Email, Company Name and Account status.
         // Todo: Allow configuring this from WHMCS admin area.
         $keys = array(
-			'email'          => 'email',
+            'email'          => 'email',
             'companyname'    => 'company_name',
             'status'         => 'account_status'
 		);
