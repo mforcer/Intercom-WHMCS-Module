@@ -21,4 +21,4 @@ Integrates Intercom into WHMCS allowing you to automatically collect data about 
 ### Help
 
 1. Open an issue
-2. enquiries@xtmhost.com
+2. enquiries@goodbytes.co.uk
