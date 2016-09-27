@@ -29,7 +29,7 @@ add_hook("ClientAreaFooterOutput", 1, function($vars) {
             'email'          => 'email',
             'companyname'    => 'company_name',
             'status'         => 'account_status'
-		);
+        );
 
         // Manually construct data that requires more work, e.g. concatenating your clients name.
         $params[] = [
@@ -50,13 +50,13 @@ add_hook("ClientAreaFooterOutput", 1, function($vars) {
         ];
 
         foreach ($keys as $key => $value) {
-			if (isset($vars['clientsdetails'][$key])) {
-				$params[] = array(
+            if (isset($vars['clientsdetails'][$key])) {
+                $params[] = array(
                     'key'   => $value,
-					'value' => html_entity_decode($vars['clientsdetails'][$key])
-				);
-			}
-		}
+                    'value' => html_entity_decode($vars['clientsdetails'][$key])
+                );
+            }
+        }
 
         if ($params) {
             $userDataArray = array();
