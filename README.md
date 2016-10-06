@@ -10,6 +10,7 @@ This module will automatically feed the following fields into the Intercom syste
 - Company Name
 - Email Optin Status
 - Account Status (Active, Closed, etc...)
+- More coming soon..
 
 
 ### Installation
