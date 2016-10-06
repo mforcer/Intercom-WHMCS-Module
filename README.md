@@ -1,7 +1,16 @@
 
 # WHMCS Intercom Integration (Addon Module for WHMCS)
 
-Integrates Intercom into WHMCS allowing you to automatically collect data about your customers.
+Intercom Addon Module integrates Intercom.io customer platform into WHMCS without altering any WHMCS core code.
+
+This module will automatically feed the following fields into the Intercom system:
+
+- Forename and Surname
+- Registration Date
+- Company Name
+- Email Optin Status
+- Account Status (Active, Closed, etc...)
+
 
 ### Installation
 1. Download [master](https://github.com/goodbytes-gb/Intercom-WHMCS-Module/archive/master.zip) branch (or clone).
