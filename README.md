@@ -1,6 +1,18 @@
 
 # WHMCS Intercom Integration (Addon Module for WHMCS)
 
+No longer being actively developed.
+
+We have been busy launching a new project and after trying out several live chat / lead gen solutions we have decided to move away from Intercom and focus our efforts elsewhere. 
+
+This repo will remain active for anyone who would still like to use it or develop it further - We would love to hear from any individuals looking to continue development.
+
+Looking for another solution, try: [CMS Based](https://cmsbased.net/whmcs-addons/intercom/)
+
+We may look at it again in the future.
+
+### About
+
 Intercom Addon Module integrates Intercom.io customer platform into WHMCS without altering any WHMCS core code.
 
 This module will automatically feed the following fields into the Intercom system:
