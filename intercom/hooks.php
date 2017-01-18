@@ -22,7 +22,7 @@ add_hook("ClientAreaFooterOutput", 1, function($vars) {
     $params = array();
     $userData = '';
 
-    if (isset($vars['clientsdetails'])) {
+    if (isset($vars['clientsdetails']) && $vars['clientsdetails']['status'] == 'Active') {
         // Base set of user data information we would like to collect: Email, Company Name and Account status.
         // Todo: Allow configuring this from WHMCS admin area.
         $keys = array(
