@@ -40,7 +40,7 @@ add_hook("ClientAreaFooterOutput", 1, function($vars) {
         // Grab the date user was registered.
         $params[] = [
             'key' => 'created_at',
-            'value' => strtotime($vars['datecreated'] . '00:00:00')
+            'value' => strtotime($vars['client']['attributes']['datecreated'] . '00:00:00')
         ];
 
         // Has this member opt out of email communications?
