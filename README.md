@@ -1,15 +1,11 @@
 
 # WHMCS Intercom Integration (Addon Module for WHMCS)
 
-No longer being actively developed.
+Development on this module has slowed. If you require any specific features please create a new Issue and we'll assess if it's viable.
 
-We have been busy launching a new project and after trying out several live chat / lead gen solutions we have decided to move away from Intercom and focus our efforts elsewhere. 
+We would love to hear from any individuals looking to continue development.
 
-This repo will remain active for anyone who would still like to use it or develop it further - We would love to hear from any individuals looking to continue development.
-
-Looking for another solution, try: [CMS Based](https://cmsbased.net/whmcs-addons/intercom/)
-
-We may look at it again in the future.
+Looking for a more robust solution? try: [CMS Based](https://cmsbased.net/whmcs-addons/intercom/)
 
 ### About
 
@@ -21,7 +17,8 @@ This module will automatically feed the following fields into the Intercom syste
 - Registration Date
 - Company Name
 - Email Optin Status
-- Account Status (Active, Closed, etc...)
+- Only processes Active clients (helps keep Intercom costs low)
+- Total client income
 - More coming soon..
 
 
@@ -36,7 +33,7 @@ This module will automatically feed the following fields into the Intercom syste
 
 ### Roadmap
 
-1. Allow settings user data collection fields from WHMCS.
+1. Allow configuring which data is synced from WHMCS.
 2. Complex data collection such as abandoned basket, product targeting.
 3. ...?
 
