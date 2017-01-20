@@ -57,12 +57,22 @@ add_hook("ClientAreaFooterOutput", 1, function($vars) {
                 );
             }
         }
+        
+        // Grab the clients income
+        if (isset($vars['clientsstats']) && method_exists($vars['clientsstats']['income'], 'toFull')) {
+            $params[] = array(
+                'key' => 'income',
+                'value' => $vars['clientsstats']['income']->toFull()
+            );
+        }
 
         if ($params) {
             $userDataArray = array();
 
             foreach ($params as $param) {
-                $userDataArray[] = $param['key'] . ': '. str_replace('"', "'", json_encode($param['value']));
+                $key = $param['key'];
+                $value = $param['value'];
+                $userDataArray[] = "{$key}: '{$value}'";
             }
 
             $userData = implode(",\n    ", $userDataArray);
